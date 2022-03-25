@@ -8,10 +8,10 @@
   <title>Travel Landing Page</title>
 </head>
 <body>
-  <section class="showcase active">
+  <section class="showcase">
     <header>
       <h2 class="logo">Travel</h2>
-      <div class="toggle active"></div>
+      <div class="toggle"></div>
     </header>
 
     <video src="resources/videos/explore.mp4" muted loop autoplay></video>
@@ -41,5 +41,15 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
 </body>
 </html>
